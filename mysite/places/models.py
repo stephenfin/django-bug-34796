@@ -9,8 +9,3 @@ class Place(models.Model):
 class Restaurant(Place):
     serves_hot_dogs = models.BooleanField(default=False)
     serves_pizza = models.BooleanField(default=False)
-
-
-class PostOffice(Place):
-    accepts_parcels = models.BooleanField(default=False)
-    has_atm = models.BooleanField(default=False)
